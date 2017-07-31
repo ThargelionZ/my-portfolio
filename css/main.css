@@ -1,0 +1,56 @@
+/*-----------------------------------------
+    main.css
+ ----------------------------------------*/
+
+/*-----------------------------------------
+    Fonts
+ ----------------------------------------*/
+
+@font-face {
+    font-family: FontAwesome;
+    src(fonts/fontawesome-webfont.ttf);
+}
+
+/*-----------------------------------------
+    Resets
+ ----------------------------------------*/
+
+* {
+    font-family: FontAwesome, "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------
+    Header
+ ----------------------------------------*/
+
+header {
+    height: 100vh;
+    background-image: url("../images/main-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* NAV */
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+#projects-header {
+    height: 400px;
+}
