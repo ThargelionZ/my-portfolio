@@ -8,7 +8,22 @@
 
 @font-face {
     font-family: FontAwesome;
-    src(fonts/fontawesome-webfont.ttf);
+    src: url("../fonts/fontawesome-webfont.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Asap";
+    src: url("../fonts/Asap-Regular.ttf");
 }
 
 /*-----------------------------------------
@@ -16,12 +31,17 @@
  ----------------------------------------*/
 
 * {
-    font-family: FontAwesome, "sans-serif";
+    font-family: "Open Sans", "sans-serif";
     margin: 0;
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, a, p, li {
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -38,6 +58,11 @@ header {
     background-size: cover;
 }
 
+#overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
 /* NAV */
 
 ul {
@@ -47,15 +72,117 @@ ul {
     list-style-type: none;
 }
 
+#nav ul {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 ul li {
     display: inline;
 }
 
 li a {
-    font-size: 16px;
+    font-size: 18px;
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: color 0.25s;
+}
+
+li a:hover {
+    color: #ccc;
+}
+
+/* MAIN HEADING */
+
+#main-heading {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+}
+
+/*#main-heading h1 {*/
+    /*margin-bottom: 50px;*/
+/*}*/
+
+#main-heading h3 {
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h1, h3 {
+    text-align: center;
     color: white;
 }
 
+h1 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+#start-button {
+    border-radius: 100%;
+    background-color: #00aff6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /*background-color: #006994;*/
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    transition: background-color 0.5s;
+}
+
+#start-button:hover {
+    background-color: #1abeff;
+}
+
+#start-button span {
+    color: white;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+
+/*-----------------------------------------
+    Container
+ ----------------------------------------*/
+
 #projects-header {
     height: 400px;
+}
+
+#carousel {
+    background-color: red;
+    height: 400px;
+}
+
+#content {
+    background-color: blue;
+    height: 800px;
+}
+
+/*-----------------------------------------
+    Mobile Optimization
+ ----------------------------------------*/
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
 }

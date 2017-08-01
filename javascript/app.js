@@ -3,3 +3,7 @@
  */
 
 $(".fade").hide(0).delay(500).fadeIn(3000);
+
+$(".fa-bars").click(function(){$("#mobileMenu").slideToggle()})
+
+$('.scrolly').scrolly();
