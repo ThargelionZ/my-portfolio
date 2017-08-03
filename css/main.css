@@ -55,7 +55,7 @@ a {
 
 header {
     height: 100vh;
-    background-image: url("../images/main-background.jpg");
+    background-image: url("../images/main-page/main-background-small.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
