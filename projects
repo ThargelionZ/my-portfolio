@@ -1,0 +1,4 @@
+A golf scorecard that searches for golf courses around you and displays the yardage, par, and handicap for every hole. You then can input data for your par and it will automatically calculate your score. Built using HTML, CSS, and JavaScript.
+
+A flappy bird rendition game I created using Nintendo's ball-like character Kirby. In the game you flap around and try to dodge blocks and get as high of a score as you can. Built using HTML (HTML5 Canvas), CSS, and JavaScript.
+

@@ -40,7 +40,7 @@ body {
     background-color: #efefef;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     text-align: center;
     color: white;
 }
@@ -336,11 +336,46 @@ hr {
 
 .progress {
     height: inherit;
-    width: 50%;
     background-color: #4caf50;
     text-align: center;
     line-height: 20px;
     color: white;
+}
+
+#progress-1 {
+    width: 75%;
+}
+
+#progress-2 {
+    width: 75%;
+}
+
+#progress-3 {
+    width: 50%;
+}
+
+#progress-4 {
+    width: 40%;
+}
+
+#progress-5 {
+    width: 40%;
+}
+
+#progress-6 {
+    width: 30%;
+}
+
+#progress-7 {
+    width: 20%;
+}
+
+#progress-8 {
+    width: 20%;
+}
+
+#progress-9 {
+    width: 20%;
 }
 
 /* PROJECTS HEADING */
@@ -373,8 +408,29 @@ hr {
 
 .project-card {
     height: 50%;
-    padding: 50px;
+    padding: 30px;
     box-sizing: border-box;
+}
+
+.project-card > h5 {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.project-card > p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.project-card > a {
+    display: block;
+    text-align: left;
+    color: #0275d8;
+}
+
+.project-card > a:hover {
+    text-decoration: underline;
 }
 
 /* CAROUSEL */
