@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Myles Parker | Portfolio</title>
 </head>
-<body class="fade">
+<body class="fade" onload="findYear()">
     <header>
         <div id="overlay">
             <div id="mobile-nav">
                 <a class="mob-navi" href="index.html">Home</a>
-                <a class="mob-navi" href="#">About Me</a>
+                <a class="mob-navi" href="pages/about.html">About Me</a>
                 <a class="mob-navi" href="#">Contact</a>
                 <a class="mob-navi" href="#">Projects</a>
                 <a class="mob-navi" href="#">Resumè</a>
@@ -23,8 +23,8 @@
             </div>
             <div id="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About Me</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Resumè</a></li>
@@ -51,7 +51,7 @@
             </div>
             <div id="intro-description">
                 <h3>Hi, I'm Myles.</h3>
-                <p>I'm 18 years old and I absolutely love to program. Ever since I was a little child, I thought computers were the best thing ever. I watched my dad (now a system admin) control the computer and tell it to do things. I wanted that kind of power over technology. I wanted to be able to use it to my advantage to create. Last year I started programming in Java for a high school class. I also took a summer class where we learned web development. Now I am able to program in C, HTML, CSS, JavaScript, Java, and SQL.</p>
+                <p>I'm a detail-oriented Junior Web Developer committed to delivering clean and functional websites to you and your company. Ever since I was a little child, I was fascinated with computers. I watched my dad (now a Senior Linux Engineer) control the computer and tell it to do things. I wanted that kind of power over technology. I wanted to be able to use that power to my advantage to create. It all started in high school with a beginners Java class, and now I am able to program in HTML, CSS, JavaScript, Ruby, SQL, and more.</p>
             </div>
         </div>
         <div id="skills-section">
@@ -169,7 +169,9 @@
             </div>
             <div id="carousel">
                 <div>
-                    <img class="project-img" src="images/main-page/projects/golf.jpg">
+                    <div class="project-img-div">
+                        <img class="project-img" src="images/main-page/projects/golf-balls.jpg">
+                    </div>
                     <div class="project-card">
                         <h5>Golf Scorecard</h5>
                         <p>A golf scorecard that searches for golf courses around you and displays the yardage, par, and handicap for every hole.</p>
@@ -177,7 +179,9 @@
                     </div>
                 </div>
                 <div>
-                    <img class="project-img" src="images/main-page/projects/kirby.jpg">
+                    <div class="project-img-div">
+                        <img class="project-img" src="images/main-page/projects/kirby.jpg">
+                    </div>
                     <div class="project-card">
                         <h5>Flappy Kirby</h5>
                         <p>A flappy bird rendition game I created using Nintendo's ball-like character Kirby.</p>
@@ -185,10 +189,12 @@
                     </div>
                 </div>
                 <div>
-                    <img class="project-img" src="images/main-page/projects/todo.jpg">
+                    <div class="project-img-div">
+                        <img class="project-img" src="images/main-page/projects/todo.jpg">
+                    </div>
                     <div class="project-card">
                         <h5>Todo Application</h5>
-                        <p>A todo application where you can make unlimited lists, with unlimited list items. Just create a list and you will be on your way to getting things done.</p>
+                        <p>A todo application where you can make unlimited lists, with unlimited list items.</p>
                         <a href="https://thargelionz.github.io/todo/">Check it out here!</a>
                     </div>
                 </div>
@@ -251,7 +257,7 @@
                     </a>
                 </li>
             </ul>
-            <span>&copy Myles Parker 2017. All Rights Reserved.</span>
+            <span id="copyright"></span>
         </div>
     </footer>
     <script src="javascript/jquery-3.2.1.min.js"></script>

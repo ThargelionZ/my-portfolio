@@ -40,3 +40,11 @@ $(window).scroll(function() {
         $('#scroll-to').fadeIn(3500);
     }
 });
+
+function findYear(){
+    var d =  new Date();
+
+    var currentYear = d.getFullYear();
+
+    $("#copyright").html("&copy Myles Parker " + currentYear + ". All Rights Reserved.");
+}

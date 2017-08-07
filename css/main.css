@@ -181,7 +181,6 @@ li a:hover {
 #main-heading {
     width: 60%;
     position: absolute;
-    /*margin: 150px auto;*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -398,12 +397,22 @@ hr {
 
 #projects-heading h2 {
     margin-bottom: 20px;
-
 }
 
 .project-img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.25s;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+}
+
+.project-img-div {
     width: 100%;
     height: 50%;
+    overflow: hidden;
 }
 
 .project-card {
@@ -427,10 +436,12 @@ hr {
     display: block;
     text-align: left;
     color: #0275d8;
+    transition: color 0.25s;
+    vertical-align: bottom;
 }
 
 .project-card > a:hover {
-    text-decoration: underline;
+    color: #35a0fd;
 }
 
 /* CAROUSEL */
