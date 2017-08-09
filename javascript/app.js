@@ -30,16 +30,16 @@ window.onclick = function(event) {
     }
 };
 
-$(window).scroll(function() {
-    var skills = "#skills";
-    var hT = $(skills).offset().top,
-        hH = $(skills).outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-wH)){
-        $('#scroll-to').fadeIn(3500);
-    }
-});
+// $(window).scroll(function() {
+//     var skills = "#skills";
+//     var hT = $(skills).offset().top,
+//         hH = $(skills).outerHeight(),
+//         wH = $(window).height(),
+//         wS = $(this).scrollTop();
+//     if (wS > (hT+hH-wH)){
+//         $('#scroll-to').fadeIn(3500);
+//     }
+// });
 
 function findYear(){
     var d =  new Date();
