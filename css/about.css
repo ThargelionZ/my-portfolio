@@ -2,6 +2,9 @@
     about.css
  ----------------------------------------*/
 
+body {
+}
+
 /*-----------------------------------------
     Header
  ----------------------------------------*/
@@ -21,6 +24,24 @@ header {
     Container
  ----------------------------------------*/
 
+/* ABOUT INTRO */
+
+#about-intro {
+    background-color: white;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-intro h3 {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 50px;
+}
+
 /* SECTION */
 
 .section {
@@ -29,6 +50,10 @@ header {
     width: 100%;
     height: 500px;
     margin-bottom: 50px;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .section-header {
@@ -61,4 +86,12 @@ header {
 .section-img {
     width: 100%;
     height: 100%;
+}
+
+#about-intro {
+    display: block;
+}
+
+#profile-img {
+    margin-bottom: 20px;
 }

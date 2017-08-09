@@ -154,6 +154,50 @@ ul {
     list-style-type: none;
 }
 
+#active {
+    color: white;
+}
+
+.navi,.navi:visited,.navi:hover,.navi:active{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:relative;
+    transition:0.5s color ease;
+    text-decoration:none;
+    font-size: 18px;
+}
+.navi:hover{
+    color: white;
+}
+.navi.before:before,.navi.after:after{
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:absolute;
+}
+.navi.before:before{
+    top: -10px;
+}
+.navi.after:after{
+    bottom: -10px;
+}
+.navi.before:before,.navi.after:after{
+    height: 2px;
+    width:0;
+    background: white;
+}
+
+.navi.third:after, .navi.sixth:before,.navi.sixth:after{
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+.navi.before:hover:before,.navi.after:hover:after{
+    width:100%;
+}
+
 #nav ul {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -163,17 +207,17 @@ ul li {
     display: inline;
 }
 
-li a {
+.navi, li a {
     font-size: 18px;
-    color: white;
+    color: #ccc;
     margin-right: 30px;
     margin-left: 30px;
     transition: color 0.25s;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
-li a:hover {
-    color: #ccc;
+.navi:hover, li a:hover {
+    color: white;
 }
 
 /* MAIN HEADING */
@@ -481,7 +525,7 @@ footer {
 footer span {
     display: block;
     text-align: center;
-    color: white;
+    color: #ccc;
 }
 
 footer > div {

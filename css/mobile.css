@@ -94,5 +94,7 @@
         /*height: 50%;*/
     }
 
-    .
+    #about-intro-description h3 {
+        font-size: 30px;
+    }
 }
